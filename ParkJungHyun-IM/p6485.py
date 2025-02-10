@@ -1,9 +1,9 @@
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
-    A=[]
-    B=[]
-    C=[]
+    A=[] # 1, 2
+    B=[] # 3, 5
+    C=[] # 1, 2, 3, 4, 5
     # bus = {'A':[], 'B':[], 'C':[]}
     for i in range(N):
         arr = list(map(int, input().split()))
@@ -16,7 +16,7 @@ for tc in range(1, T+1):
     max_C = max(C)
     cnt_arr = [0] * (max_C+1)
 
-    nA = len(A)
+    nA = len(A) # 2
     for i in range(nA):
         for j in range(A[i], B[i]+1):
             if j <= max_C:
