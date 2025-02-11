@@ -10,6 +10,9 @@ def applause(arr, N):
                 # sum+=(arr[i]+cnt)
                 # 이건 왜 안될까?
                 # sum = sum + (arr[i] + (i -sum))
+                # 안되지... cnt에 하나만 들어간게 아니잖아
+                # cnt = i-sum이 아니라
+                # cnt += i-sum이기 때문에 틀린 것!
                 sum = arr[i] + i
     return cnt
 
