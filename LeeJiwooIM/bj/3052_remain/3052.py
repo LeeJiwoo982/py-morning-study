@@ -1,3 +1,4 @@
+#나머지
 N = 10
 arr = [int(input()) for _ in range(N)]  #10개 의 수 입력받기
 # print(arr)
